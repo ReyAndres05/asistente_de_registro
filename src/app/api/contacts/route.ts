@@ -61,7 +61,7 @@ export async function DELETE(request: Request) {
     }
 
     // Delete associated calls first, then contacts
-    await prisma.call.deleteMany({ where: { contactId: { in: ids } } });
+    await prisma.callRecord.deleteMany({ where: { contactId: { in: ids } } });
     const result = await prisma.contact.deleteMany({ where: { id: { in: ids } } });
 
     return NextResponse.json({ deleted: result.count });
