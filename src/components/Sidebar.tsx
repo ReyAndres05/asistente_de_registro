@@ -4,8 +4,8 @@ import {
   LayoutDashboard, Phone, FileUp, Headphones,
   ChevronLeft, ChevronRight, BarChart2, Settings
 } from 'lucide-react';
+import { ViewType } from '@/types';
 
-export type ViewType = 'dashboard' | 'llamadas' | 'importar';
 
 interface SidebarProps {
   currentView: ViewType;

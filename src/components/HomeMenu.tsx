@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { LayoutDashboard, Phone, FileUp, Headphones, TrendingUp, Users, ArrowRight } from 'lucide-react';
-import type { ViewType } from '@/app/page';
+import type { ViewType } from '@/types';
 
 interface HomeMenuProps {
   onSelect: (view: ViewType) => void;

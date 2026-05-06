@@ -8,8 +8,8 @@ import NuevaLlamadaModal from '@/components/NuevaLlamadaModal';
 import HomeMenu from '@/components/HomeMenu';
 import { Device, Call } from '@twilio/voice-sdk';
 import { PhoneCall, PhoneOff, Loader2, ChevronLeft } from 'lucide-react';
+import { ViewType } from '@/types';
 
-export type ViewType = 'dashboard' | 'llamadas' | 'importar';
 
 export default function Home() {
   const [currentView, setCurrentView] = useState<ViewType | null>(null); // null = home menu
